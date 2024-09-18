@@ -1,0 +1,155 @@
+body {
+    background-image: url('hero-bg-light.webp');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('hero-bg-light.webp');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6; /* Adjust the opacity */
+    z-index: -1; /* Behind the content */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.navitems {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.navitems ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.navitems ul li {
+    margin: 0 10px;
+}
+
+.navitems ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition:ease-in 0.3s;
+    margin-right:60px;
+}
+
+.navitems ul li p{
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+
+
+.navitems ul li a:hover {
+    color: rgb(185, 182, 182);
+}
+
+.p {
+    display: flex;
+}
+
+
+.nav-dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    background-color: #f8f9fa;
+}
+.content{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content .c1{
+    display:block;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    padding-top:150px;
+    height:80vh;
+}
+
+.c1 h1{
+    font-size:60px;
+    font-weight: 800;
+}
+
+.c1 h2{
+    color:rgb(88, 88, 88);
+    font-weight:800;
+    font-size:30px;
+}
+
+.pic img{
+    width:80%;
+    height:80%;
+    background: transparent;
+}
+
+
+ul.p {
+    list-style-type: none;
+}
+
+ul.p li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.p li a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+ul.p .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+}
+
+ul.p .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.p .dropdown-content li {
+    display: block;
+}
+
+ul.p .dropdown-content li a {
+    padding: 10px;
+}
+
+
+
+
+
